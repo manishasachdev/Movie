@@ -9,7 +9,7 @@ const url =
 
 app.use(
   cors({
-    origin: "https://your-frontend-domain.com",
+    origin: "*",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
   })
