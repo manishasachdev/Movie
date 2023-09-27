@@ -1,11 +1,14 @@
 const mongoose = require("mongoose");
 const express = require("express");
+const cors = require("cors"); 
 const app = require("./app");
 const port = 3001; // Choose any port number you prefer
 
 const url =
   "mongodb+srv://admin:5dEKCbad9uvARLN5@cluster0.xsiblnd.mongodb.net/cineflix?retryWrites=true&w=majority";
 
+app.use(cors());
+  
 //connection with DataBase
 mongoose
   .connect(url, {
