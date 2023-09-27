@@ -7,7 +7,13 @@ const port = 3001; // Choose any port number you prefer
 const url =
   "mongodb+srv://admin:5dEKCbad9uvARLN5@cluster0.xsiblnd.mongodb.net/cineflix?retryWrites=true&w=majority";
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://your-frontend-domain.com",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true,
+  })
+);
   
 //connection with DataBase
 mongoose
