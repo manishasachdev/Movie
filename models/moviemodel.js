@@ -13,46 +13,46 @@ const movieSchema = new mongoose.Schema(
       type: Number,
       required: [true, "A tour must have a duration"],
     },
-    maxGroupSize: {
-      type: Number,
-      required: [true, "A tour must have a group size"],
-    },
-    difficulty: {
-      type: String,
-      required: [true, "A tour must have a difficulty"],
-    },
-    ratingsAverage: {
-      type: Number,
-      default: 4.5,
-    },
-    ratingsQuantity: {
-      type: Number,
-      default: 0,
-    },
+    // maxGroupSize: {
+    //   type: Number,
+    //   required: [true, "A tour must have a group size"],
+    // },
+    // difficulty: {
+    //   type: String,
+    //   required: [true, "A tour must have a difficulty"],
+    // },
+    // ratingsAverage: {
+    //   type: Number,
+    //   default: 4.5,
+    // },
+    // ratingsQuantity: {
+    //   type: Number,
+    //   default: 0,
+    // },
     price: {
       type: Number,
       required: [true, "A tour must have a price"],
     },
-    priceDiscount: Number,
-    summary: {
-      type: String,
-      trim: true, // to remove wide space in end and starting,
-      required: [true, "A tour must have a describtion"],
-    },
-    description: {
-      type: String,
-      trim: true,
-    },
-    imageCover: {
-      type: String,
-      required: [true, "A tour must have a cover image"],
-    },
-    images: [String],
-    createdAt: {
-      type: Date,
-      default: Date.now(),
-    },
-    startDates: [Date],
+    // priceDiscount: Number,
+    // summary: {
+    //   type: String,
+    //   trim: true, // to remove wide space in end and starting,
+    //   required: [true, "A tour must have a describtion"],
+    // },
+    // description: {
+    //   type: String,
+    //   trim: true,
+    // },
+    // imageCover: {
+    //   type: String,
+    //   required: [true, "A tour must have a cover image"],
+    // },
+    // images: [String],
+    // createdAt: {
+    //   type: Date,
+    //   default: Date.now(),
+    // },
+    // startDates: [Date],
   },
   {
     // Add the useCreateIndex option here
