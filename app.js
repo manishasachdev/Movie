@@ -189,14 +189,7 @@ const movieRouter = require("./routes/movieRoute");
 const cors = require("cors"); 
 
 const app = express();
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    credentials: true,
-  })
-);
-  
+app.use(cors());
 
 app.use(express.json());
 app.use(express.static(`${__dirname}/public`));
